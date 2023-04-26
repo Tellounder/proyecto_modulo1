@@ -1,9 +1,13 @@
 /* font-family: 'Open Sans', sans-serif; */
-
 body{
-    font-family: 'Open Sans', sans-serif; ;
-    font-size: 16px;
-    line-height: 20px; /*interlineado- separacion entre linea y linea*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.logo{
+    margin-left: 15px;
+    transform-style: preserve-3d;
 }
 
 header{
@@ -12,6 +16,7 @@ header{
 }
 header h1{
     color: white;
+    text-decoration: underline 1px;
     font-size: 40px;
     font-style: italic;
     font-weight: 100;
@@ -19,20 +24,23 @@ header h1{
     position: relative;
     bottom: 32px;
     margin-left: 25px;/*left:25px;*/
+    margin-bottom: 5px;
+    
 
 
 }
 
 nav{
-    background-color: #6da9ed;
-    margin-bottom: 30px;
+    background-color: #5b99e0;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex ;
 }
 
 nav ul li{
@@ -40,7 +48,7 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration:double;
     color: white;
     padding: 5px 0;
     display: flex;
@@ -49,15 +57,78 @@ nav ul li a{
 
 nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.3);
+   
+    transition-duration: 1s;
+
 }
 nav ul li a.activo{
     background-color: #4c76a5;
 }
+
 
 footer{
     background-color: #ccc;
     padding: 48px;
     text-align: center;
     clear: both;
-    margin-top: 0;
+    margin-top: 30px;
+    
 }
+
+.holder{
+  width: 960px;
+  margin: 0 auto;
+  
+    
+}
+
+h2{
+   color: #2e64a1;
+   font-weight: 400;
+      
+  }
+
+  .columnas{
+   display: flex;
+       
+   }
+
+   .bienvenidos{
+   width: 75%;
+   background-color: rgb(193, 193, 193);
+   padding-right: 30px;
+        
+    }
+
+    .testimonios{
+       width: 25%;
+            
+        }
+
+.bienvenidos p{
+   font-size:24px ;
+        
+    }
+.testimonio{
+    background-color: rgba(124, 128, 132, 0.845);
+    padding: 16px;
+         
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px ;
+    background-color: yellow;
+    display: block;
+
+     }
+
+.testimonio .autor{
+    font-size: 12px ;
+    background-color: rgba(255, 217, 0, 0.916);
+    text-align: center;
+    display: block;
+    margin: 16px 0;
+
+     }
